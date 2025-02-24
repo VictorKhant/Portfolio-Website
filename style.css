@@ -1,0 +1,106 @@
+* {
+    font-family: 'Comic Sans MS','Arial';
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    background-image: url(background.jpg);
+    z-index: 0;
+}
+
+hr {
+    margin: 0 5%;
+}
+
+body {
+    background-color: black;
+}
+
+.navbar{
+    padding: 10px 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+
+.logo a{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.navdiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navdiv li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navdiv li a{
+    transition: all 0.3s ease 0s;
+    color: #edf0f1;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 25px;
+}
+
+.navdiv li a:hover{
+    color: #0088A9;
+}
+
+.navdiv button{
+    background-color: rgba(0, 136, 169, 1);
+    margin-left: 10px;
+    border-radius: 50px;
+    padding: 10px;
+    max-width: 60rem;
+    border: none;
+    transition: all 0.3s ease 0s;
+}
+
+.navdiv button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+    transition: 0.25s;
+}
+
+.profile {
+    display: flex;
+    padding: 50px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .profile {
+        flex-direction: column-reverse;
+    }
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 5%;
+}
+
+.introTitle {
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.introBody {
+    font-size: 90%;
+    margin: 20px 0;
+}
+
+.profilePic {
+    max-width: 100%;
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+    margin: 5%;
+}
+
+
