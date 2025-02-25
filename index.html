@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <title>Myat Minn Khant</title>
+    <script type="module" src="scripts.js"></script>
 </head>
 <body>
     <!--Navigation bar at the top-->
@@ -34,7 +36,7 @@
     </nav>
 
 
-    <!--Little Profile Section-->
+    <!--Short Profile Section-->
     <div class="profile">
         <div class="intro">
             <p class="introTitle">
@@ -48,25 +50,60 @@
         </div>
     <hr>
 
+    <!--Skill Section-->
+    <section class="experience">
+        <p class="containerTitle">EXPERIENCE WITH</p>
+        <div class="logos">
+            <i class="fa-brands fa-html5"></i> 
+            <i class="fa-brands fa-js"></i>
+            <i class="fa-brands fa-swift"></i>
+            <i class="fa-brands fa-python"></i>    
+            <i class="fa-brands fa-java"></i>  
+            <i class="fa-brands fa-golang"></i>
+        </div>
+    </section>
+    <hr>
     <!--Explore my site container-->
-    <p class="containerTitle">Explore My Site</p>
+    <p class="containerTitle">EXPLORE MY PORTFOLIO</p>
     <div class="container">
         <div id="image1">
             <img class="card" src="./images/About Me.jpg" alt="">
-            <p id="text1">About Me</p>
+            <a href="about.html">
+                <p id="text1">About Me</p>
+            </a>
         </div>
         <div id="image2">
             <img class="card" src="./images/experiences.jpg" alt="">
-            <p id="text2">Experiences</p>
+            <a href="about.html" style="display: block;">
+                <p id="text2">Experiences</p>
+            </a>
         </div>
         <div id="image3">
             <img class="card" src="./images/projects.jpg" alt="">
-            <p id="text3">Projects</p>
+            <a href="about.html" style="display: block;">   
+                <p id="text3">Projects</p>
+            </a>
         </div>
         <div id="image4">
             <img class="card" src="./images/resume.JPG" alt="">
-            <p id="text4">Resume</p>
+            <a href="about.html" style="display: block;">
+                <p id="text4">Resume</p>
+            </a>
         </div>
     </div>
+
+    <!--Footer-->
+    <section class="footer">
+        <div class="socialIcons">
+            <a href="https://github.com/VictorKhant" target="_blank"><i class="fa-brands fa-github"></i></i></a>
+            <a href="https://www.linkedin.com/in/victorkhant" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
+    <div class="footerBottom">
+        <p class="snap">Myat Khant Portfolio</p>
+        <p class="copyright">Copyright &copy;2024; Designed By 
+            <span class="designer">Myat Khant</span>
+        </p>
+    </section>
 </body>
 </html>
