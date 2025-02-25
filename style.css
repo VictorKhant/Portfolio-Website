@@ -3,7 +3,6 @@
     color: white;
     text-decoration: none;
     margin: 0;
-    background-image: url(images/background.jpg);
     z-index: 0;
 }
 
@@ -12,46 +11,48 @@ hr {
 }
 
 body {
-    background-color: black;
+    background-color: #1A242D;
 }
 
-.navbar{
+.navbar {
     padding: 10px 15px;
     position: sticky;
+    background-color: #1A242D;
     top: 0;
     z-index: 10000;
 }
 
-.logo a{
-    font-size: 20px;
+.logo a {
+    font-size: 15px;
     font-weight: 600;
     color: white;
 }
 
-.navdiv{
+.navdiv {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.navdiv li{
+.navdiv li {
     list-style: none;
     display: inline-block;
 }
 
-.navdiv li a{
+.navdiv li a {
     transition: all 0.3s ease 0s;
     color: #edf0f1;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     margin-right: 25px;
 }
 
-.navdiv li a:hover{
+.navdiv li a:hover {
     color: #0088A9;
 }
 
-.navdiv button{
+.navdiv button {
+    font-size: 15px;
     background-color: rgba(0, 136, 169, 1);
     margin-left: 10px;
     border-radius: 50px;
@@ -73,11 +74,6 @@ body {
     align-items: center;
 }
 
-@media (max-width: 600px) {
-    .profile {
-        flex-direction: column-reverse;
-    }
-}
 .intro {
     display: flex;
     flex-direction: column;
@@ -97,10 +93,65 @@ body {
 
 .profilePic {
     max-width: 100%;
-    width: 15%;
+    width: 100px;
     height: 15%;
     border-radius: 50%;
     margin: 5%;
 }
 
+.containerTitle {
+    margin-top: 40px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    display:block;
+    width: 100%;
+    padding: 0;
+    height: 100%
+}
+
+#image1, #image2, #image3, #image4 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+#text1, #text2, #text3, #text4 {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+#image1:hover #text1, #image2:hover #text2, #image3:hover #text3, #image4:hover #text4 {
+    opacity: 1;
+}
+
+@media (max-width: 600px) {
+    .profile {
+        flex-direction: column-reverse;
+    }
+    #image1, #image2, #image3, #image4 {
+        width: 150px;
+        height: 150px;
+    }
+}
 
