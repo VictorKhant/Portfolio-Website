@@ -68,7 +68,7 @@ body {
 }
 
 .navdiv button:hover {
-    background-color: rgba(26, 36, 45, 1);
+    background-color: #6594AB;
     transition: 0.25s;
 }
 
