@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume | Myat Khant</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <script type="module" src="scripts.js"></script>
 </head>
 <body>
     <!--Navigation bar at the top-->
@@ -14,23 +16,29 @@
             <div class="logo">
                 <a href="index.html">Myat (Victor) Khant</a>
             </div>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="about.html">About Me</a>
-                </li>
-                <li>
-                    <a href="experiences.html">Experiences</a>
-                </li>
-                <li>
-                    <a href="resume.html">Resume</a>
-                </li>
-                <button>
-                    <a href="mailto:victor.mkhant@gmail.com">Contact</a>
-                </button>
-            </ul>
+            <button aria-label="toggle menu" id="toggleButton">
+                <i class="fa-solid fa-bars openIcon"></i>
+                <i class="fa-solid fa-xmark closeIcon"></i>
+            </button>
+            <div class="navbarLinks">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About Me</a>
+                    </li>
+                    <li>
+                        <a href="experiences.html">Experiences</a>
+                    </li>
+                    <li>
+                        <a href="resume.html">Resume</a>
+                    </li>
+                    <button class="contact">
+                        <a href="mailto:victor.mkhant@gmail.com">Contact</a>
+                    </button>
+                    </ul>
+            </div>
         </div>
     </nav>
     

@@ -19,13 +19,17 @@ body {
 
 /*navigation bar styling*/
 .navbar {
-    padding: 10px 15px;
+    width: 100%;
     position: sticky;
     background-color: #2D3E4D;
     top: 0;
     z-index: 10000;
 }
-
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+}
 .logo a {
     font-size: 15px;
     font-weight: 600;
@@ -35,7 +39,6 @@ body {
 .navdiv {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .navdiv li {
@@ -48,20 +51,19 @@ body {
     color: #edf0f1;
     font-size: 15px;
     font-weight: 500;
-    margin-right: 25px;
+    padding-right: 25px;
     font-weight: bold;
 }
 
 .navdiv li a:hover {
     color: #8bcef0;
-    
 }
 
-.navdiv button {
+.contact {
     font-size: 15px;
     font-weight: bold;
     background-color: #6594AB;
-    margin-left: 10px;
+    margin: 10px;
     border-radius: 50px;
     padding: 10px;
     max-width: 60rem;
@@ -69,11 +71,65 @@ body {
     transition: all 0.3s ease 0s;
 }
 
-.navdiv button:hover {
+.contact:hover {
     background-color: #7db9d7;
     transition: 0.25s;
 }
-
+#toggleButton {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: none;
+    font-size: 25px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+#toggleButton .openIcon {
+    display: block;
+}
+#toggleButton .closeIcon {
+    display: none;
+}
+#toggleButton.open .openIcon {
+    display: none;
+}
+#toggleButton.open .closeIcon {
+    display: block;
+}
+.navbarLinks ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media screen and (max-width: 700px) {
+    .navbarLinks{
+        width: 100%;
+        display: none;
+    }
+    #toggleButton {
+        display: block;
+    }
+    .navbarLinks.open {
+        display: block;
+    }
+    .navbarLinks ul{
+        width: 100%;
+        flex-direction: column;
+        justify-content: left;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .navbarLinks li{
+        padding: 10px 20px;
+        width: 100%;
+    }
+    .navdiv {
+        flex-direction: column;
+    }
+    .contact {
+        display: none;
+    }
+}
 /* Profile Section Styling */
 .profile {
     display: flex;
